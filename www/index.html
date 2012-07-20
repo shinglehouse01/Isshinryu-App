@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>Isshinryu Karate</title>
+	<link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.0.1.min.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="pgandjqm-style-override.css" type="text/css" charset="utf-8" />
+	<script type="text/javascript" src="jquery.mobile/jquery-1.6.4.min"></script>
+	<script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+	<script type="text/javascript" charset="utf-8" src="video.js"></script>
+	<script src="jquery.mobile/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="jquery.mobile/iscroll.js"></script>
+	<script type="text/javascript" src="jquery.mobile/jScroll.js"></script>
+</head>
+<body>
+<div data-role="page">
+	<div data-role="header">
+		<h1>Isshinryu Karate</h1>
+	</div>
+	<div class="wrapper">
+		<div class="scroller">
+			<div data-role="content">
+				<ul data-role="listview" data-inset="true">
+					<li>
+						<a href="history.html" data-transition="slide">
+							<img src="images/shimabaku.jpg" />
+							<h3>History</h3>
+							<p>History of Isshinryu Karate</p>
+						</a>
+					</li>
+					<li>
+						<a href="creed.html" data-transition="slide">
+							<img src="images/creed.jpg" />
+							<h3>Creed</h3>
+							<p>I come to you with only Karate</p>
+						</a>
+					</li>
+					<li>
+						<a href="codes.html" data-transition="slide">
+							<img src="images/codes.jpg" />
+							<h3>Codes</h3>
+							<p>The Codes of Isshinryu</p>
+						</a>
+					</li>
+					<li>
+						<a href="patch.html" data-transition="slide">
+							<img src="images/patchIcon.jpg" />
+							<h3>Patch</h3>
+							<p>The Isshinryu Patch</p>
+						</a>
+					</li>
+					<li>
+						<a href="basics.html" data-transition="slide">
+							<img src="images/basics.jpg" />
+							<h3>Basics</h3>
+							<p>Upper and Lower body basics</p>
+						</a>
+					</li>
+					<li>
+						<a href="kata.html" data-transition="slide">
+							<img src="images/kata.jpg" />
+							<h3>Kata</h3>
+							<p>Video and descriptions</p>
+						</a>
+					</li>
+					<li>
+						<a href="general.html" data-transition="slide">
+							<img src="images/general.jpg" />
+							<h3>General Information</h3>
+							<p>Dojo etiquette, terminology and etc</p>
+						</a>
+					</li>
+				</ul>
+		    </div>
+		</div>
+	</div>
+	<div data-role="footer" id="footer">
+		<div data-role="navbar">
+		      <ul>
+		          	<li><a href="aboutUs.html" data-role="button" data-icon="info" data-transition="slide">Info</a></li>
+            		<li><a href="findUs.html" data-role="button" data-icon="star" data-transition="slide">Find Us</a></li>
+            		<li><a href="contact.html" data-role="button" data-icon="grid" data-transition="slide">Other Dojos</a></li>
+		      </ul>
+	     </div>
+	</div>
+</div>
+</body>
+	<script>
+		$('div[data-role="page"]').live('pageshow',function(event, ui){
+	        $(".wrapper").jScroll();
+	    });
+		$('.expand').live("click", function(e) {
+		  	$(".wrapper").jScroll();
+		});
+	</script>
+</html>
