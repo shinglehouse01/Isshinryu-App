@@ -1,0 +1,5 @@
+Initial commit of the Android code for the Isshinryu app.
+
+This version is written in HTML5, CSS3, jQuery (1.6.4) and JQM (1.0.1) and then wrapped in PhoneGap (1.4.1) to run as a "native" application.  
+
+To fork this for iOS (or other platforms) all that should need to be adjusted is the video player plugin and the calls to the plugin.  In this version it is the video.js file. 
